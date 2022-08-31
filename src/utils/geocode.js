@@ -9,6 +9,7 @@ const geocode = (address, callback) => {
             callback(`Could not load location data!`)
         } else {
             const location = body.features[0]
+            // console.log(`Got geodata: ${JSON.stringify(location, null, 4)}`)
             geodata = {
                 location: location.place_name,
                 latitude: location.center[0],

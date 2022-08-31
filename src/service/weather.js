@@ -9,17 +9,14 @@ const displayForecast = (location, callback) => geocode(location, (error, { lati
         return callback(error, undefined)
     }
 
-    forecast(latitude, longitude, (error, {description, country, name, temperature, feels, precip} = {}) => {
+    forecast(latitude, longitude, (error, {description, country, region, name, temperature, feels, precip} = {}) => {
         if(error) {
             const error = {
                 error: "Couldn't get forecast"
             }
             return callback(error, undefined)
         }
-
-        const weather = {description, country, name, temperature, feels, precip}
-
-        console.log(`${description}. In ${country}, ${name} it is currently ${temperature} degrees and it feels like ${feels}. The chance of rain is ${precip} %`)
+        const weather = {description, country, region, name, temperature, feels, precip}
         callback(undefined, weather);
     })
 })

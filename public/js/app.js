@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
         if(data.error) {
             message1.textContent = data.error
         } else {
-            message1.textContent = `In ${data.country} it is ${data.temperature} degrees now!`
+            message1.textContent = `In ${data.country}, ${data.region}, ${data.name} it is ${data.temperature} now! It feels like ${data.feels}, precipitation probability is ${data.precip}.`
         }
     })
 })

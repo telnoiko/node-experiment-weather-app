@@ -9,8 +9,10 @@ const forecast = (latitude, longitude, callback) => {
             callback(`Could not load weather data!`)
         } else {
             const data = body.current
+            // console.log(`Got forecast: ${JSON.stringify(body, null, 4)}`)
             const weather_data = {
                 country: body.location.country,
+                region: body.location.region,
                 name: body.location.name,
                 description: data.weather_descriptions, 
                 temperature: data.temperature,
