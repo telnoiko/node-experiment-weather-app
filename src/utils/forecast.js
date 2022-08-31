@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
                 country: body.location.country,
                 region: body.location.region,
                 name: body.location.name,
-                description: data.weather_descriptions, 
+                description: data.weather_descriptions[0], 
                 temperature: data.temperature,
                 precip: data.precip,
                 feels: data.feelslike
