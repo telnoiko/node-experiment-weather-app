@@ -1,3 +1,3 @@
 Checking out Node.JS  
 
-It is deployed here - https://ko7ko-node-test-weather-app.herokuapp.com
+It is deployed here - https://telnoiko-weather-app.fly.dev
