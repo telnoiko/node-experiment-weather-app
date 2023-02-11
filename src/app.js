@@ -2,6 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const weather = require('./service/weather')
+require('dotenv').config();
 
 const app = express()
 const publicDirectoryPath = path.join(__dirname, '../public')
