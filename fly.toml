@@ -1,6 +1,6 @@
-# fly.toml file generated for telnoiko-weather-app on 2023-02-11T17:07:08+04:00
+# fly.toml file generated for ko7ko-weather-app on 2023-02-12T21:26:38+04:00
 
-app = "telnoiko-weather-app"
+app = "ko7ko-weather-app"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []

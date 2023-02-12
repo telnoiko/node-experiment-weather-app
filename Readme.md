@@ -4,7 +4,7 @@ This simple Node.JS app displays the weather for a given location.
 It uses the [MapBox](https://mapbox.com) API to get the coordinates of the location, and 
 the [WeatherStack](https://weatherstack.com) API to get the weather data.
 
-It is deployed here - https://telnoiko-weather-app.fly.dev
+It is deployed here - https://ko7ko-weather-app.fly.dev
 
 ## How to run locally
 Install NodeJS and NPM. Then run the following command in the root directory of the project.
